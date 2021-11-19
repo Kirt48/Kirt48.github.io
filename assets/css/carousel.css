@@ -51,13 +51,3 @@ body{
 #control-next{
   right: 20px;
 }
-
-.fade{
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@keyframes fade {
-  from { opacity: .4; }
-  to { opacity: 1; }  
-}

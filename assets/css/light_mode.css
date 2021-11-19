@@ -17,10 +17,20 @@ body {
 
 .light #control-prev {
   color: rgba(0, 0, 0, 0.6);
+  opacity: 0.2;
+}
+
+.light #control-prev:hover {
+  opacity: 1;
 }
 
 .light #control-next {
   color: rgba(0, 0, 0, 0.6);
+  opacity: 0.2;
+}
+
+.light #control-next:hover {
+  opacity: 1;
 }
 
 .light .form-one {
@@ -30,6 +40,7 @@ body {
   clip-path: polygon(0 0, 62% 0, 82% 41%, 0% 100%);
   position: absolute;
   top: 0%;
+  z-index: -1;
 }
 
 .light .form-two {
@@ -39,6 +50,7 @@ body {
   clip-path: polygon(0 0, 76% 56%, 55% 100%, 0 100%);
   position: absolute;
   bottom: 0%;
+  z-index: -1;
 }
 
 .light #slide-0 {
@@ -49,17 +61,15 @@ body {
 .light .content-0 {
   width: 50%;
   height: 100%;
-  z-index: 3;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .light .content-0 div {
   width: 60%;
   height: 100%;
-  z-index: 3;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
@@ -108,6 +118,91 @@ body {
   background-size: cover;
 }
 
+.light .content-1 {
+  width: 100%;
+  height: 100%;
+  background: #083835;
+  display: flex !important;
+}
+
+.light .content-1-hobbies {
+  width: 50%;
+  height: 100%;
+  background-color: #083835;
+  display: flex !important;
+  justify-content: center;
+}
+
+.light .content-1-hobbies div {
+  width: 60%;
+  height: 100%;
+  background-color: #083835;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.light .content-1-hobbies div #title {
+  font-size: 20px;
+  color: #823d2b;
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.light .content-1-hobbies div h4 {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.light .content-1-hobbies div h4 i {
+  font-size: 100px;
+  margin-right: 20px;
+}
+
+.light .content-1-habilities {
+  width: 50%;
+  height: 100%;
+  background-color: #0b4e49;
+  display: flex !important;
+  justify-content: center;
+}
+
+.light .content-1-habilities div {
+  width: 60%;
+  height: 100%;
+  background-color: #0b4e49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.light .content-1-habilities div #title {
+  font-size: 20px;
+  color: #823d2b;
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.light .content-1-habilities div h4 {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
+.light .content-1-habilities div h4 i {
+  font-size: 100px;
+  margin-left: 20px;
+}
+
+.light .content-2 {
+  width: 100%;
+  height: 100%;
+  background: #083835;
+}
+
 @media only screen and (max-width: 1367px) {
   .light #control-next {
     color: rgba(255, 255, 255, 0.6);
@@ -130,7 +225,7 @@ body {
   .light .content-0 div #title {
     margin-top: 10px;
   }
-  
+
   .light .content-0 div #subtitles {
     margin-top: 10px;
   }
@@ -142,10 +237,28 @@ body {
   .light .content-0 div .profile-image {
     display: block;
     border-radius: 50%;
-    margin-top: 75%;
+    margin-top: 60%;
   }
 
   .light .photo-0 {
     display: none;
+  }
+
+  .light .content-1-hobbies div {
+    width: 85%;
+  }
+
+  .light .content-1-hobbies div h4 i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  .light .content-1-habilities div {
+    width: 85%;
+  }
+
+  .light .content-1-habilities div h4 i {
+    font-size: 25px;
+    margin-left: 10px;
   }
 }

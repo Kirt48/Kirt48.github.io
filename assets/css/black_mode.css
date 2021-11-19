@@ -49,12 +49,22 @@
 
 .dark #control-prev {
   color: rgba(255, 255, 255, 0.6);
+  opacity: .5;
 }
 
+.dark #control-prev:hover {
+    opacity: 1;
+  }
+
 .dark #control-next {
-  color: #222222a8;
+  color: #4666a7;
   z-index: 10;
+  opacity: .5;
 }
+
+.dark #control-next:hover {
+    opacity: 1;
+  }
 
 .dark .form-one {
   height: 40%;
@@ -63,6 +73,7 @@
   clip-path: polygon(0 0, 62% 0, 82% 41%, 0% 100%);
   position: absolute;
   top: 0%;
+  z-index: -1;
 }
 
 .dark .form-two {
@@ -72,6 +83,7 @@
   clip-path: polygon(0 0, 76% 56%, 55% 100%, 0 100%);
   position: absolute;
   bottom: 0%;
+  z-index: -1;
 }
 
 .dark #slide-0 {
@@ -82,7 +94,6 @@
 .dark .content-0 {
   width: 50%;
   height: 100%;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +103,6 @@
 .dark .content-0 div {
   width: 60%;
   height: 100%;
-  z-index: 3;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
@@ -144,7 +154,85 @@
 .dark .content-1 {
   width: 100%;
   height: 100%;
-  background: white;
+  background: #121212;
+  display: flex !important;
+}
+
+.dark .content-1-hobbies {
+  width: 50%;
+  height: 100%;
+  background-color: #121212;
+  display: flex !important;
+  justify-content: center;
+}
+
+.dark .content-1-hobbies div {
+  width: 60%;
+  height: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dark .content-1-hobbies div #title {
+  font-size: 20px;
+  color: #4666a7;
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.dark .content-1-hobbies div h4 {
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.dark .content-1-hobbies div h4 i {
+  font-size: 100px;
+  margin-right: 20px;
+}
+
+.dark .content-1-habilities {
+  width: 50%;
+  height: 100%;
+  background-color: #222222;
+  display: flex !important;
+  justify-content: center;
+}
+
+.dark .content-1-habilities div {
+  width: 60%;
+  height: 100%;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dark .content-1-habilities div #title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.dark .content-1-habilities div h4 {
+  color: #4666a7;
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
+.dark .content-1-habilities div h4 i {
+  font-size: 100px;
+  margin-left: 20px;
+}
+
+.dark .content-2 {
+  width: 100%;
+  height: 100%;
+  background: #121212;
 }
 
 @media only screen and (max-width: 1367px) {
@@ -183,10 +271,28 @@
   .dark .content-0 div .profile-image {
     display: block;
     border-radius: 50%;
-    margin-top: 75%;
+    margin-top: 60%;
   }
 
   .dark .photo-0 {
     display: none;
+  }
+
+  .dark .content-1-hobbies div {
+    width: 85%;
+  }
+
+  .dark .content-1-hobbies div h4 i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  .dark .content-1-habilities div {
+    width: 85%;
+  }
+
+  .dark .content-1-habilities div h4 i {
+    font-size: 25px;
+    margin-left: 10px;
   }
 }
