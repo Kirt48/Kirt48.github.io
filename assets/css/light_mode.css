@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(165, 158, 158, 0.884);
+  background-color: #083835;
 }
 
 .light .navbar__switch::after {
@@ -12,6 +12,7 @@ body {
   height: 32px;
   border-radius: 50%;
   background-color: #4666a7;
+  z-index: 30;
 }
 
 .light #control-prev {
@@ -48,7 +49,55 @@ body {
 .light .content-0 {
   width: 50%;
   height: 100%;
-  background-color: #0b4e49;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.light .content-0 div {
+  width: 60%;
+  height: 100%;
+  z-index: 3;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.light .content-0 div .profile-image {
+  height: 200px;
+  display: none;
+}
+
+.light .content-0 div #name {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.6);
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.light .content-0 div #title {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.light .content-0 div #subtitles {
+  font-size: 18px;
+  color: #823d2b;
+  letter-spacing: 1.5px;
+  margin: 15px 0px 10px;
+}
+
+.light .content-0 div #content-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .light .photo-0 {
@@ -57,4 +106,31 @@ body {
   background-image: url("../images/profile_photo.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1367px) {
+  .light #control-next {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .light .content-0 {
+    width: 100%;
+  }
+
+  .light .content-0 div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .light .content-0 div #name {
+    height: 45px;
+  }
+  .light .content-0 div .profile-image {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .light .photo-0 {
+    display: none;
+  }
 }
