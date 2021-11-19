@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/black_mode.css" />
+    <link rel="stylesheet" href="assets/css/light_mode.css" />
     <title>Mi Curriculum</title>
 </head>
-<body>
-    <div class="container">
-        <div class="card-personal-info">
-            <div class="personal-info-photo">
-                <img src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg" alt="no-image">
-            </div>
-            <div class="personal-info-data">
-                <div class="data-social-information">
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Cra 22 #84AA - 289</li>
-                        <li><i class="fas fa-phone-alt"></i>+57 301 624 0301</li>
-                        <li><i class="fas fa-envelope"></i>alexanderv@iebo.edu.co</li>
-                        <li><i class="fas fa-school"></i>I.E Bello Oriente</li>
-                    </ul>
-                </div>
-                <div class="data-name">
-                    <p>Alexander Vargas Carrillo</p>
-                </div>
-            </div>
+
+<body id="body" class="light">
+    <button class="navbar__switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+    </button>
+    <header id="slider-container">
+        <div id="slide-0" class="slide fade">
+            <div class="content-0"></div>
+            <div class="photo-0"></div>
         </div>
-    </div>
-
-
+        <div id="slide-1" class="slide fade">
+            <div class="content-1"></div>
+            <img src="assets/images/profile_photo.jpeg" alt="">
+        </div>
+        <div id="slide-2" class="slide fade">
+            <img src="assets/images/profile_photo.jpeg" alt="">
+        </div>
+        <div id="controls-container">
+            <p id="control-prev" class="slider-control center_y">
+                <i class="fas fa-arrow-left"></i>
+            </p>
+            <p id="control-next" class="slider-control center_y">
+                <i class="fas fa-arrow-right"></i>
+            </p>
+        </div>
+        <div class="form-one"></div>
+        <div class="form-two"></div>
+    </header>
 
     <script src="https://kit.fontawesome.com/c5eb9eca11.js" crossorigin="anonymous"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/black_mode.js"></script>
 </body>
+
 </html>

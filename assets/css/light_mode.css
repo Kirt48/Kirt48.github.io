@@ -1,0 +1,60 @@
+body {
+  background-color: rgba(165, 158, 158, 0.884);
+}
+
+.light .navbar__switch::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #4666a7;
+}
+
+.light #control-prev {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.light #control-next {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.light .form-one {
+  height: 40%;
+  width: 20%;
+  background-color: #0b4e49;
+  clip-path: polygon(0 0, 62% 0, 82% 41%, 0% 100%);
+  position: absolute;
+  top: 0%;
+}
+
+.light .form-two {
+  height: 40%;
+  width: 20%;
+  background-color: #0b4e49;
+  clip-path: polygon(0 0, 76% 56%, 55% 100%, 0 100%);
+  position: absolute;
+  bottom: 0%;
+}
+
+.light #slide-0 {
+  display: flex !important;
+  width: 100%;
+}
+
+.light .content-0 {
+  width: 50%;
+  height: 100%;
+  background-color: #0b4e49;
+}
+
+.light .photo-0 {
+  width: 75%;
+  height: 100%;
+  background-image: url("../images/profile_photo.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
