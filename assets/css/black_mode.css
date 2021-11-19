@@ -49,22 +49,14 @@
 
 .dark #control-prev {
   color: rgba(255, 255, 255, 0.6);
-  opacity: .5;
+  opacity: 0.5;
 }
-
-.dark #control-prev:hover {
-    opacity: 1;
-  }
 
 .dark #control-next {
   color: #4666a7;
   z-index: 10;
-  opacity: .5;
+  opacity: 0.5;
 }
-
-.dark #control-next:hover {
-    opacity: 1;
-  }
 
 .dark .form-one {
   height: 40%;
@@ -86,39 +78,11 @@
   z-index: -1;
 }
 
-.dark #slide-0 {
-  display: flex !important;
-  width: 100%;
-}
-
-.dark .content-0 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.dark .content-0 div {
-  width: 60%;
-  height: 100%;
-  flex-direction: column;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
 .dark .content-0 div #name {
   font-size: 28px;
   color: rgba(255, 255, 255, 0.6);
   height: 35px;
   letter-spacing: 1.5px;
-}
-
-.dark .content-0 div .profile-image {
-  height: 200px;
-  display: none;
 }
 
 .dark .content-0 div #title {
@@ -141,14 +105,6 @@
   letter-spacing: 1.5px;
   margin-top: 0px;
   margin-left: 0px;
-}
-
-.dark .photo-0 {
-  width: 75%;
-  height: 100%;
-  background-image: url("../images/profile_photo.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .dark .content-1 {
@@ -174,6 +130,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .dark .content-1-hobbies div #title {
   font-size: 20px;
   color: #4666a7;
@@ -185,11 +142,6 @@
   color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
-}
-
-.dark .content-1-hobbies div h4 i {
-  font-size: 100px;
-  margin-right: 20px;
 }
 
 .dark .content-1-habilities {
@@ -224,75 +176,72 @@
   text-align: end;
 }
 
-.dark .content-1-habilities div h4 i {
-  font-size: 100px;
-  margin-left: 20px;
-}
-
 .dark .content-2 {
   width: 100%;
   height: 100%;
   background: #121212;
+  display: flex !important;
 }
+
+.dark .content-2-aspirations {
+  width: 50%;
+  height: 100%;
+  background-color: #121212;
+  display: flex !important;
+  justify-content: center;
+}
+
+.dark .content-2-aspirations div {
+  width: 60%;
+  height: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dark .content-2-aspirations div #title {
+  font-size: 20px;
+  color: #4666a7;
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.dark .content-2-aspirations div ul li {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.dark .content-2-projects {
+    width: 50%;
+    height: 100%;
+    background-color: #121212;
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .dark .content-2-projects div {
+    width: 60%;
+    height: 100%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+    .dark .content-2-projects div #title {
+      font-size: 28px;
+      color: #4666a7;
+      height: 35px;
+      letter-spacing: 1.5px;
+    }
 
 @media only screen and (max-width: 1367px) {
   .dark #control-next {
     color: rgba(255, 255, 255, 0.6);
-  }
-
-  .dark .content-0 {
-    width: 100%;
-  }
-
-  .dark .content-0 div {
-    width: 60%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .dark .content-0 div #name {
-    height: 45px;
-    font-size: 22px;
-  }
-
-  .dark .content-0 div #title {
-    margin-top: 10px;
-  }
-
-  .dark .content-0 div #subtitles {
-    margin-top: 10px;
-  }
-
-  .dark .content-0 div #content-text {
-    margin-bottom: 15px;
-  }
-
-  .dark .content-0 div .profile-image {
-    display: block;
-    border-radius: 50%;
-    margin-top: 60%;
-  }
-
-  .dark .photo-0 {
-    display: none;
-  }
-
-  .dark .content-1-hobbies div {
-    width: 85%;
-  }
-
-  .dark .content-1-hobbies div h4 i {
-    font-size: 25px;
-    margin-right: 10px;
-  }
-
-  .dark .content-1-habilities div {
-    width: 85%;
-  }
-
-  .dark .content-1-habilities div h4 i {
-    font-size: 25px;
-    margin-left: 10px;
   }
 }

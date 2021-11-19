@@ -20,7 +20,7 @@ body {
   opacity: 0.2;
 }
 
-.light #control-prev:hover {
+#control-prev:hover {
   opacity: 1;
 }
 
@@ -29,7 +29,7 @@ body {
   opacity: 0.2;
 }
 
-.light #control-next:hover {
+#control-next:hover {
   opacity: 1;
 }
 
@@ -53,12 +53,12 @@ body {
   z-index: -1;
 }
 
-.light #slide-0 {
+#slide-0 {
   display: flex !important;
   width: 100%;
 }
 
-.light .content-0 {
+.content-0 {
   width: 50%;
   height: 100%;
   flex-direction: column;
@@ -67,7 +67,7 @@ body {
   display: flex;
 }
 
-.light .content-0 div {
+.content-0 div {
   width: 60%;
   height: 100%;
   flex-direction: column;
@@ -76,7 +76,7 @@ body {
   justify-content: center;
 }
 
-.light .content-0 div .profile-image {
+.content-0 div .profile-image {
   height: 200px;
   display: none;
 }
@@ -110,7 +110,7 @@ body {
   margin-left: 0px;
 }
 
-.light .photo-0 {
+.photo-0 {
   width: 75%;
   height: 100%;
   background-image: url("../images/profile_photo.JPG");
@@ -150,12 +150,12 @@ body {
 }
 
 .light .content-1-hobbies div h4 {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
 }
 
-.light .content-1-hobbies div h4 i {
+.content-1-hobbies div h4 i {
   font-size: 100px;
   margin-right: 20px;
 }
@@ -186,13 +186,13 @@ body {
 }
 
 .light .content-1-habilities div h4 {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
   text-align: end;
 }
 
-.light .content-1-habilities div h4 i {
+.content-1-habilities div h4 i {
   font-size: 100px;
   margin-left: 20px;
 }
@@ -201,64 +201,153 @@ body {
   width: 100%;
   height: 100%;
   background: #083835;
+  display: flex !important;
 }
 
+.light .content-2-aspirations {
+  width: 50%;
+  height: 100%;
+  background-color: #083835;
+  display: flex !important;
+  justify-content: center;
+}
+
+.light .content-2-aspirations div {
+  width: 60%;
+  height: 100%;
+  background-color: #083835;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.light .content-2-aspirations div #title {
+  font-size: 20px;
+  color: #823d2b;
+  height: 35px;
+  letter-spacing: 1.5px;
+}
+
+.light .content-2-aspirations div ul li {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.light .content-2-projects {
+  width: 50%;
+  height: 100%;
+  background-color: #083835;
+  display: flex !important;
+  justify-content: center;
+}
+
+.light .content-2-projects div {
+  width: 60%;
+  height: 100%;
+  background-color: #083835;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-2-projects img {
+    width: 50%;
+  }
+
+  .light .content-2-projects div #title {
+    font-size: 28px;
+    color: #823d2b;
+    height: 35px;
+    letter-spacing: 1.5px;
+  }
+
 @media only screen and (max-width: 1367px) {
+  body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
   .light #control-next {
     color: rgba(255, 255, 255, 0.6);
   }
-  .light .content-0 {
+  .content-0 {
     width: 100%;
   }
 
-  .light .content-0 div {
+  .content-0 div {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .light .content-0 div #name {
+  .content-0 div #name {
     height: 45px;
     font-size: 22px;
   }
 
-  .light .content-0 div #title {
+  .content-0 div #title {
     margin-top: 10px;
   }
 
-  .light .content-0 div #subtitles {
+  .content-0 div #subtitles {
     margin-top: 10px;
   }
 
-  .light .content-0 div #content-text {
+  .content-0 div #content-text {
     margin-bottom: 15px;
   }
 
-  .light .content-0 div .profile-image {
+  .content-0 div .profile-image {
     display: block;
     border-radius: 50%;
-    margin-top: 60%;
+    margin-top: 50%;
   }
 
-  .light .photo-0 {
+  .photo-0 {
     display: none;
   }
 
-  .light .content-1-hobbies div {
+  .content-1-hobbies div {
     width: 85%;
   }
 
-  .light .content-1-hobbies div h4 i {
+  .content-1-hobbies div h4 i {
     font-size: 25px;
     margin-right: 10px;
   }
 
-  .light .content-1-habilities div {
+  .content-1-habilities div {
     width: 85%;
   }
 
-  .light .content-1-habilities div h4 i {
+  .content-1-habilities div h4 i {
     font-size: 25px;
     margin-left: 10px;
   }
+
+  #hidden {
+      display: none;
+  }
+
+  .content-2-aspirations div {
+    width: 85% !important;
+  }
+
+  .content-2-projects div {
+    width: 85% !important;
+  }
+
+  .content-2-projects img {
+    width: 75% !important;
+  }
+
+  .content-2-projects div #title {
+    font-size: 23px !important;
+    text-align: center;
+  }
+  
 }
