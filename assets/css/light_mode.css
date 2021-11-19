@@ -124,10 +124,25 @@ body {
 
   .light .content-0 div #name {
     height: 45px;
+    font-size: 22px;
   }
+
+  .light .content-0 div #title {
+    margin-top: 10px;
+  }
+  
+  .light .content-0 div #subtitles {
+    margin-top: 10px;
+  }
+
+  .light .content-0 div #content-text {
+    margin-bottom: 15px;
+  }
+
   .light .content-0 div .profile-image {
     display: block;
     border-radius: 50%;
+    margin-top: 75%;
   }
 
   .light .photo-0 {

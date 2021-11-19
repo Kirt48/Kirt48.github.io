@@ -165,10 +165,25 @@
 
   .dark .content-0 div #name {
     height: 45px;
+    font-size: 22px;
   }
+
+  .dark .content-0 div #title {
+    margin-top: 10px;
+  }
+
+  .dark .content-0 div #subtitles {
+    margin-top: 10px;
+  }
+
+  .dark .content-0 div #content-text {
+    margin-bottom: 15px;
+  }
+
   .dark .content-0 div .profile-image {
     display: block;
     border-radius: 50%;
+    margin-top: 75%;
   }
 
   .dark .photo-0 {
